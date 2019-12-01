@@ -11,7 +11,7 @@
     "production": "node ./production-ts/config/parcel.config.js --product-serve --http-port 80 --https-port 442",
     "production-build": "npm run production-clean && tsc && ts-node ./config/parcel.config.ts --product-build",
     "production-clean": "rm -rf ./production/*.* && rm -rf ./production-ts/*.*",
-    "postinstall": "node ./postinstall.ts"
+    "postinstall": "rm -rf ./.cache && node ./postinstall.ts"
   },
   "dependencies": {
     "autoprefixer": "^9.7.2",
@@ -28,6 +28,7 @@
     "regenerator-runtime": "^0.13.3",
     "svelma": "^0.3.0",
     "svelte": "^3.16.0",
+    "svelte-css-vars": "0.0.1",
     "svelte-preprocess": "^3.2.6",
     "svelte-spa-chunk": "^1.0.1",
     "svelte-spa-router": "^2.0.0",

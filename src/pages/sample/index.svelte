@@ -11,23 +11,32 @@
     
     // Page Direct Declaration
     import { fly } from 'svelte/transition'
+    import Sample from '../../components/sample'
 </script>
 
 <!-- Page Transition Animation -->
 <div
     in:fly="{{x:1000, duration: 500}}"
     out:fly="{{x:-1000, duration: 500}}"
-
     class="bg"
     style="height: 100%;">
 
     <!-- Page Define -->
-    Test Loading?
+
+    <!-- Component -->
+    <Sample
+        _a='Svelte'
+        _b='Is'
+        _c='Awesome'
+        _theme={{
+            textColor: 'red',
+            blabla: 'hoho'
+        }}/>
 </div>
 
 <style>
     .bg {
-        color: #ffffff;
+        color: #000000;
         background-color: #ffffff;
     }
 </style>
