@@ -14,7 +14,10 @@ for(let folderName of folderNames){
         let browserListFilePath = `node_modules/${folderName}/.browserslistrc`
         let packageFileData = JSON.parse(fs.readFileSync(packageFilePath))
         packageFileData['browserslist'] = nodeVersion
-        fs.writeFileSync(browserListFilePath, nodeVersion)
+        // fs.writeFileSync(browserListFilePath, nodeVersion)
+        if(fs.existsSync(browserListFilePath))
+            fs.unlinkSync(browserListFilePath)
+
         fs.writeFileSync(packageFilePath, JSON.stringify(packageFileData, null, 2))
         console.log(`Fixed browserlist in ${packageFilePath}`)
     }catch(e) {}

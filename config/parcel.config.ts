@@ -41,10 +41,10 @@ if(process.argv[1] == __filename){
       runBundle({...options, watch: true})
       break
     case '--build':
-      runBundle({...options, minify: true})
+      runBundle({...options, minify: true, hmr: false})
       break
     case '--product-build':
-      runBundle({...options, minify: true, outDir: './production'})
+      runBundle({...options, minify: true, outDir: './production', hmr: false})
       break
     case '--product-serve':
       serve({isProductMode: true})
