@@ -34,7 +34,7 @@
     "svelte-css-vars": "0.0.1",
     "svelte-preprocess": "^3.2.6",
     "svelte-preprocess-sass": "^0.2.0",
-    "svelte-reusable": "^1.0.0",
+    "svelte-reusable": "^1.0.1",
     "svelte-spa-chunk": "^1.0.1",
     "svelte-spa-router": "^2.0.0",
     "svelte-ts-preprocess": "^1.1.3",
