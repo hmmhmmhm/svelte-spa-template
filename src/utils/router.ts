@@ -5,6 +5,7 @@ import * as SPA from '../reuseable/logics/spa'
 import * as _spaRouter from 'svelte-spa-router'
 
 export interface ISPARouter {
+    push: (link: string) => void,
     link: (link: string) => void,
     pop: () => void,
     replace: (link: string) => void,
