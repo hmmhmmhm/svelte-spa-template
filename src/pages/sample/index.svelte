@@ -25,13 +25,13 @@
 
     <!-- Component -->
     <Sample
-        _a='Svelte'
-        _b='Is'
-        _c='Awesome'
-        _theme={{
-            textColor: 'red',
-            blabla: 'hoho'
+        a='Svelte'
+        b='Is'
+        c='Awesome1'
+        theme={{
+            fontSize: '20px'
         }}/>
+
 </div>
 
 <style>

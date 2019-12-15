@@ -1,35 +1,31 @@
-
 <script>
-    import css from 'svelte-css-vars'
+    import * as svelte from 'svelte'
+    import { makeCSS } from 'svelte-css-in-js'
 
-    // a 설명
-    export let _a = ''
-    // b 설명
-    export let _b = ''
-    // c 설명
-    export let _c = ''
+    export let a = ''
+    export let b = ''
+    export let c = ''
 
-    /**
-     * [THEME CODE]
-     * {
-     * textColor: 'red',
-     * blabla: 'hoho'
-     * }
-     * [THEME CODE]
-     */
-    export let _theme = undefined
+    // CSS Prop
+    let themePrimaryColor = 'blue'
+
+    // CSS Style
+    export let style = {
+        background: {
+            color: themePrimaryColor
+        }
+    }
+
+    // CSS Theme
+    export let theme = {
+        background: {
+            fontSize: '30px'
+        }
+    }
+    console.log(svelte)
+    const css = makeCSS({ style, theme, svelte })
 </script>
 
-<!-- Custom CSS Bind -->
-<div use:css="{_theme}">
-
-    <div class="test">
-        {_a} {_b} {_c}
-    </div>
+<div class='{css.background}'>
+    {a} {b} {c}
 </div>
-
-<style>
-    .test {
-        color: var(--textColor);
-    }
-</style>

@@ -1,6 +1,6 @@
 {
   "name": "svelte-spa-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/index.ts",
   "license": "MIT",
   "scripts": {
@@ -31,7 +31,7 @@
     "regenerator-runtime": "^0.13.3",
     "svelma": "^0.3.0",
     "svelte": "^3.16.0",
-    "svelte-css-vars": "0.0.1",
+    "svelte-css-in-js": "^1.0.1",
     "svelte-preprocess": "^3.2.6",
     "svelte-preprocess-sass": "^0.2.0",
     "svelte-reusable": "^1.0.1",

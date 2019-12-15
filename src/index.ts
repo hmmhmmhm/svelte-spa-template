@@ -4,5 +4,5 @@ import "regenerator-runtime/runtime"
 import Svelte from './index.svelte'
 
 export default new Svelte({
-  target: document.body
+    target: document.body
 })

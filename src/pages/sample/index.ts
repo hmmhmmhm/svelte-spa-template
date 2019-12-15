@@ -2,16 +2,14 @@ import * as Store from 'svelte/store'
 import {
     // Packages
     Router,
-    Components,
     Resources,
-} from '../util'
+} from '../../utils'
 
 export default {
 
     // Logics
 
     // Global Variable
-    Components,
     Resources,
     Router,
     Store,
