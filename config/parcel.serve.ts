@@ -55,20 +55,23 @@ export const serve = async ({isProductMode} = {isProductMode: false}) => {
     httpsServer: https.createServer(testCertificate, expressInstance)
   }
 
-  let publicIp = await PublicIp.v4()
+  let publicIp: string | undefined = undefined
+  try{
+    publicIp = await PublicIp.v4()
+  }catch(e) {}
 
   // Binding a Port
   handles.httpServer.listen(httpPort, () => {
     console.log('')
     Logger.debug(`🚧  HTTP Server Running...`)
     Logger.debug(`🚧  - http://localhost:${httpPort}`)
-    Logger.debug(`🚧  - http://${publicIp}:${httpPort}`)
+    if(publicIp) Logger.debug(`🚧  - http://${publicIp}:${httpPort}`)
   })
   handles.httpsServer.listen(httpsPort, () => {
     console.log('')
     Logger.debug(`🚧  HTTPS Server Running...`)
     Logger.debug(`🚧  - https://localhost:${httpsPort}`)
-    Logger.debug(`🚧  - https://${publicIp}:${httpsPort}`)
+    if(publicIp) Logger.debug(`🚧  - https://${publicIp}:${httpsPort}`)
   })
 
   return handles

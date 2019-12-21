@@ -16,6 +16,7 @@ export const options = {
   https: false,
   logLevel: 3,
   hmrPort: 0,
+  production: false,
   hmrHostname: '',
   sourceMaps: false,
   detailedReport: true
@@ -38,13 +39,13 @@ if(process.argv[1] == __filename){
       serve()
       break
     case '--watch':
-      runBundle({...options, watch: true})
+      runBundle({...options, production: true, watch: true})
       break
     case '--build':
-      runBundle({...options, minify: true, hmr: false})
+      runBundle({...options, production: true, minify: true, hmr: false})
       break
     case '--product-build':
-      runBundle({...options, minify: true, outDir: './production', hmr: false})
+      runBundle({...options, production: true, minify: true, outDir: './production', hmr: false})
       break
     case '--product-serve':
       serve({isProductMode: true})
