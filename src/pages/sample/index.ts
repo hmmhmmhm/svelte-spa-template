@@ -6,7 +6,6 @@ import {
 } from '../../utils'
 
 export default {
-
     // Logics
 
     // Global Variable

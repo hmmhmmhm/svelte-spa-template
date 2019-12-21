@@ -12,20 +12,18 @@
     // CSS Style
     export let style = {
         background: {
-            color: themePrimaryColor
-        }
+            color: themePrimaryColor,
+        },
     }
 
     // CSS Theme
     export let theme = {
         background: {
-            fontSize: '30px'
-        }
+            fontSize: '30px',
+        },
     }
     console.log(svelte)
     const css = makeCSS({ style, theme, svelte })
 </script>
 
-<div class='{css.background}'>
-    {a} {b} {c}
-</div>
+<div class={css.background}>{a} {b} {c}</div>

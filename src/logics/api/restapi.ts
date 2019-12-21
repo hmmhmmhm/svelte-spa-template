@@ -1,10 +1,6 @@
-import {
-    RestAPI,
-    getToken
-} from '../../utils'
+import { RestAPI, getToken } from '../../utils'
 
 export const BackEndAPI = new RestAPI({
-
     // Type the Back-End API Server address.
     address: 'http://localhost',
 
@@ -18,5 +14,5 @@ export const BackEndAPI = new RestAPI({
 
     // Specifies the function that will run
     // if an error occurs during communication.
-    faultTolerance: (e)=> console.log(e),
+    faultTolerance: e => console.log(e),
 })

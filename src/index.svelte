@@ -7,13 +7,18 @@
     const Chunk = ChunkGenerator(ChunkComponent)
 
     const routes = {
-        '/': Chunk(()=> import('./pages/sample/index.svelte')),
-        '/sample': Chunk(()=> import('./pages/sample/index.svelte')),
-        '*': Chunk(()=> import('./pages/sample/index.svelte')),
+        '/': Chunk(() => import('./pages/sample/index.svelte')),
+        '/sample': Chunk(() => import('./pages/sample/index.svelte')),
+        '*': Chunk(() => import('./pages/sample/index.svelte')),
     }
 </script>
 
 <!-- START Container -->
+<div id="container">
+    <Router {routes} />
+</div>
+<!-- ENDED Container -->
+
 <style>
     #container {
         margin: 0;
@@ -21,8 +26,3 @@
         overflow: auto;
     }
 </style>
-
-<div id="container">
-    <Router {routes}/>
-</div>
-<!-- ENDED Container -->

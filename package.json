@@ -11,7 +11,8 @@
     "production": "node ./production-ts/config/parcel.config.js --product-serve --http-port 80 --https-port 442",
     "production-build": "npm run production-clean && tsc && ts-node ./config/parcel.config.ts --product-build",
     "production-clean": "rm -rf ./production/*.* && rm -rf ./production-ts/*.*",
-    "postinstall": "rm -rf ./.cache && node ./postinstall.ts"
+    "postinstall": "rm -rf ./.cache && node ./postinstall.ts",
+    "lint": "prettier --write ./src/**/*.{ts,js,css,html,svelte}"
   },
   "dependencies": {
     "autoprefixer": "^9.7.3",
@@ -46,7 +47,9 @@
   "devDependencies": {
     "@pyoner/svelte-ts-preprocess": "^1.2.1",
     "@types/express": "^4.17.2",
-    "@types/node": "^12.12.21"
+    "@types/node": "^12.12.21",
+    "prettier": "^1.19.1",
+    "prettier-plugin-svelte": "^0.7.0"
   },
   "browserslist": [
     "cover 99.5%"
