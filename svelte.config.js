@@ -13,7 +13,7 @@ const opts = {
 }
 
 // For svelte-vscode
-let configJs = { preprocess: pyoner.preprocess(opts) }
+let configJs = { preprocess: pyoner.preprocess() }
 
 if (process.argv[1].indexOf('--') != -1) {
   configJs = {
