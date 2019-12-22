@@ -30,6 +30,7 @@
     "postcss-load-config": "^2.1.0",
     "public-ip": "^4.0.0",
     "regenerator-runtime": "^0.13.3",
+    "src": "^1.1.2",
     "svelma": "^0.3.0",
     "svelte": "^3.16.5",
     "svelte-css-in-js": "^1.0.1",
@@ -48,6 +49,7 @@
     "@pyoner/svelte-ts-preprocess": "^1.2.1",
     "@types/express": "^4.17.2",
     "@types/node": "^12.12.21",
+    "parcel-plugin-typescript-paths": "^0.1.14",
     "prettier": "^1.19.1",
     "prettier-plugin-svelte": "^0.7.0"
   },

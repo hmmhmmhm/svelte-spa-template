@@ -1,4 +1,4 @@
-<script>
+<script lang="typescript">
     import * as svelte from 'svelte'
     import { makeCSS } from 'svelte-css-in-js'
 

@@ -1,9 +1,10 @@
-<script>
+<script lang="typescript">
 
     // Page Query String
-    export let params = {}
+    export let params: any = {}
 
     // Component Declaration
+    // @ts-ignore
     import Page from './index.ts'
     const { Components, Resources, Router, Store } = Page
 
@@ -14,9 +15,16 @@
         params
     )
 
+    // Test Intellisense.
+    // @ts-ignore
+    import { canYouSeeMe2 } from './'
+    canYouSeeMe2(123)
+
     // Page Direct Declaration
     import { fly } from 'svelte/transition'
-    import Sample from '../../components/sample'
+
+    // @ts-ignore
+    import Sample from '../../components/sample.svelte'
 </script>
 
 <!-- Page Transition Animation -->
@@ -30,12 +38,7 @@
     <!-- Page Define -->
 
     <!-- Component -->
-    <Sample
-        a="Svelte"
-        b="Is"
-        c="Awesome1"
-        theme={{ fontSize: '20px' }}
-    />
+    <Sample a="Svelte" b="Is" c="Awesome1" theme={{ fontSize: '20px' }} />
 
 </div>
 

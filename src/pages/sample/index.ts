@@ -5,8 +5,11 @@ import {
     Resources,
 } from '../../utils'
 
+export const canYouSeeMe2 = (test: number) => 'hi??'
+
 export default {
     // Logics
+    canYouSeeMe2,
 
     // Global Variable
     Resources,
