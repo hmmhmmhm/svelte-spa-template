@@ -17,8 +17,15 @@
 
     // Test Intellisense.
     // @ts-ignore
-    import { canYouSeeMe2 } from './'
-    canYouSeeMe2(123)
+    /*
+    import DataValue from './index.ts'
+    let getMy: typeof import('./index') = DataValue
+    */
+   // @ts-ignore
+    import DataValue from './index'
+    console.log('DataValue')
+    console.log(DataValue)
+
 
     // Page Direct Declaration
     import { fly } from 'svelte/transition'

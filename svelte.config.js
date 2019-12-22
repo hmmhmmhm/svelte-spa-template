@@ -2,8 +2,18 @@ const pyoner = require("@pyoner/svelte-ts-preprocess")
 const { scss, postcss } = require('svelte-preprocess')
 const autoprefixer = require('autoprefixer')
 
+let env = pyoner.createEnv()
+const compilerOptions = pyoner.readConfigFile(env)
+const opts = {
+  env,
+  compilerOptions: {
+    ...compilerOptions,
+    allowNonTsExtensions: true
+  }
+}
+
 // For svelte-vscode
-let configJs = { preprocess: pyoner.preprocess() }
+let configJs = { preprocess: pyoner.preprocess(opts) }
 
 if (process.argv[1].indexOf('--') != -1) {
   configJs = {
@@ -14,14 +24,7 @@ if (process.argv[1].indexOf('--') != -1) {
           autoprefixer()
         ]
       }),
-      pyoner.preprocess({compilerOptions: {
-        "ba123seUrl": ".",
-        "paths": {
-          "src/*": [
-            "src/*"
-          ]
-        }
-      }})
+      pyoner.preprocess(opts)
     ]
   }
 }
