@@ -1,6 +1,8 @@
 <script lang="typescript">
-    import * as svelte from 'svelte'
-    import { makeCSS } from 'svelte-css-in-js'
+
+    // @ts-ignore
+    import Utils from './utils'
+    const { svelte } = Utils
 
     export let a = ''
     export let b = ''
@@ -22,7 +24,8 @@
             fontSize: '30px',
         },
     }
-    console.log(svelte)
+
+    import { makeCSS } from 'svelte-css-in-js'
     const css = makeCSS({ style, theme, svelte })
 </script>
 

@@ -1,37 +1,15 @@
 <script lang="typescript">
-
-    // Page Query String
-    export let params: any = {}
-
-    // Component Declaration
-    // @ts-ignore
-    import Page from './index.ts'
-    const { Components, Resources, Router, Store } = Page
-
-    // Debug Declaration
-    console.log(
-        `%c🚧  ${Store.get(Router.location)} loaded`,
-        'color: #908CFF;',
-        params
-    )
-
-    // Test Intellisense.
-    // @ts-ignore
-    /*
-    import DataValue from './index.ts'
-    let getMy: typeof import('./index') = DataValue
-    */
-   // @ts-ignore
-    import DataValue from './index'
-    console.log('DataValue')
-    console.log(DataValue)
-
-
-    // Page Direct Declaration
+    // Modules
     import { fly } from 'svelte/transition'
-
     // @ts-ignore
-    import Sample from '../../components/sample.svelte'
+    import Page from './utils'
+
+    // Components
+    const { Sample } = Page.Components
+
+    // Logics
+    export let params: any = {}
+    Page.pageInit({ params })
 </script>
 
 <!-- Page Transition Animation -->
@@ -41,8 +19,6 @@
     class="bg"
     style="height: 100%;"
 >
-
-    <!-- Page Define -->
 
     <!-- Component -->
     <Sample a="Svelte" b="Is" c="Awesome1" theme={{ fontSize: '20px' }} />

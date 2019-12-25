@@ -1,4 +1,6 @@
 export * from 'svelte-reusable/logics'
 export * from '../logics/api'
 export * from '../resources'
-export const canYouSeeMe = () => 'hi??'
+export * from '../components'
+export * from './page'
+export * from './svelte'
