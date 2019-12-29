@@ -1,5 +1,4 @@
 <script lang="typescript">
-
     // @ts-ignore
     import Utils from './utils'
     const { svelte } = Utils
