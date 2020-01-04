@@ -1,7 +1,6 @@
 <script lang="typescript">
     // @ts-ignore
     import Utils from './utils'
-    const { svelte } = Utils
 
     export let a = ''
     export let b = ''
@@ -25,7 +24,7 @@
     }
 
     import { makeCSS } from 'svelte-css-in-js'
-    const css = makeCSS({ style, theme, svelte })
+    const css = makeCSS({ style, theme })
 </script>
 
 <div class={css.background}>{a} {b} {c}</div>
