@@ -1,6 +1,6 @@
 {
   "name": "svelte-spa-template",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "src/index.ts",
   "license": "MIT",
   "scripts": {
@@ -9,7 +9,7 @@
     "watch": "npm run clean && ts-node ./config/parcel.config.ts --watch",
     "clean": "rm -rf ./dist/*.*",
     "production": "node ./production-ts/config/parcel.config.js --product-serve --http-port 80 --https-port 442",
-    "production-build": "npm run production-clean && tsc && ts-node ./config/parcel.config.ts --product-build && node ./postbuild.ts ./productio",
+    "production-build": "npm run production-clean && tsc && ts-node ./config/parcel.config.ts --product-build && node ./postbuild.ts ./production",
     "production-clean": "rm -rf ./production/*.* && rm -rf ./production-ts/*.*",
     "postinstall": "rm -rf ./.cache && node ./postinstall.ts",
     "postbuild": "node ./postbuild.ts ./dist",
