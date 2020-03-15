@@ -1,8 +1,8 @@
-import { RestAPI, getToken } from '../../utils'
+import { RestAPI, Account } from '../utils'
 
-export const BackEndAPI = new RestAPI({
+export const API = new RestAPI({
     // Type the Back-End API Server address.
-    address: 'http://localhost',
+    address: 'https://localhost',
 
     // Enable this option if you use an
     // authentication token for API connection.
@@ -10,7 +10,7 @@ export const BackEndAPI = new RestAPI({
 
     // Enter the token (string) if
     // want to use when the API connection.
-    getToken,
+    getToken: Account.getToken,
 
     // Specifies the function that will run
     // if an error occurs during communication.

@@ -1,13 +1,11 @@
 <script lang="typescript">
     // @ts-ignore
-    import Utils from './utils'
+    import * as Utils from '../utils'
 
-    export let a = ''
-    export let b = ''
-    export let c = ''
+    export let label = ''
 
     // CSS Prop
-    let themePrimaryColor = 'blue'
+    let themePrimaryColor = 'black'
 
     // CSS Style
     export let style = {
@@ -27,4 +25,4 @@
     const css = makeCSS({ style, theme })
 </script>
 
-<div class={css.background}>{a} {b} {c}</div>
+<div class={css.background}>{label}</div>

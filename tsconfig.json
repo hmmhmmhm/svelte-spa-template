@@ -20,12 +20,7 @@
         "esModuleInterop": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "baseUrl": ".",
-        "paths": {
-          "src/*": [
-            "src/*"
-          ]
-        }
+        "baseUrl": "."
     },
     "include": [
         "./src/**/*",

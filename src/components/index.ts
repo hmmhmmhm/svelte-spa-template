@@ -1,6 +1,6 @@
 // @ts-ignore
-import Sample from './sample.svelte'
+import Template from './_Template.svelte'
 
 export const Components = {
-    Sample,
+    Template,
 }

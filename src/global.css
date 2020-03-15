@@ -1,32 +1,17 @@
-* {
-    /* cursor: url('./img/cursor.png') 39 39, auto; */
-}
-
 html,
 body {
     margin: 0;
     height: max-content;
     overflow-y: auto;
     overflow-x: hidden;
-
     font-family: 'NanumSquareRound', sans-serif;
 }
 
 .bg {
     position: absolute;
     width: 100%;
-
-    /* Firefox no scoll */
     overflow: -moz-scrollbars-none;
-    /* IE no scoll */
-    -ms-overflow-style: none;
-
-    /* no text select */
-    -webkit-touch-callout: none;
     user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
 }
 
 /* Safari no scoll */
