@@ -1,6 +1,6 @@
 {
   "name": "svelte-spa-template",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "src/index.ts",
   "license": "MIT",
   "scripts": {
@@ -31,12 +31,12 @@
     "public-ip": "^4.0.0",
     "regenerator-runtime": "^0.13.5",
     "svelma": "^0.3.2",
-    "svelte": "^3.19.2",
+    "svelte": "^3.20.0",
     "svelte-css-in-js": "^1.0.3",
     "svelte-notifications": "^0.9.9",
     "svelte-preprocess": "^3.5.0",
     "svelte-preprocess-sass": "^0.2.0",
-    "svelte-reusable": "^3.0.3",
+    "svelte-reusable": "^3.0.4",
     "svelte-spa-chunk": "^1.0.3",
     "svelte-spa-router": "^2.0.1",
     "svelte-ts-preprocess": "^1.1.3",
