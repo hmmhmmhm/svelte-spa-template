@@ -36,7 +36,7 @@
     "svelte-notifications": "^0.9.9",
     "svelte-preprocess": "^3.5.0",
     "svelte-preprocess-sass": "^0.2.0",
-    "svelte-reusable": "^3.0.6",
+    "svelte-reusable": "^3.0.7",
     "svelte-spa-chunk": "^1.0.3",
     "svelte-spa-router": "^2.0.1",
     "svelte-ts-preprocess": "^1.1.3",
