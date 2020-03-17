@@ -22,6 +22,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "folder-logger": "^1.0.7",
+    "moment": "^2.24.0",
     "nested-static": "^1.1.0",
     "node-sass": "^4.13.1",
     "parcel-bundler": "^1.12.4",
@@ -31,7 +32,7 @@
     "public-ip": "^4.0.0",
     "regenerator-runtime": "^0.13.5",
     "svelma": "^0.3.2",
-    "svelte": "^3.20.0",
+    "svelte": "^3.20.1",
     "svelte-css-in-js": "^1.0.3",
     "svelte-notifications": "^0.9.9",
     "svelte-preprocess": "^3.5.0",
@@ -43,7 +44,7 @@
     "ts-node": "^8.6.2",
     "tslib": "^1.11.1",
     "typescript": "^3.8.3",
-    "yargs": "^15.3.0"
+    "yargs": "^15.3.1"
   },
   "devDependencies": {
     "@pyoner/svelte-ts-preprocess": "^1.2.1",
