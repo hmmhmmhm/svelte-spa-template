@@ -1,4 +1,5 @@
 import { RestAPI, Account } from '../utils'
+import axios from 'axios'
 
 export const API = new RestAPI({
     // Type the Back-End API Server address.
@@ -16,3 +17,7 @@ export const API = new RestAPI({
     // if an error occurs during communication.
     faultTolerance: e => console.log(e),
 })
+
+// For IE8 Compatible
+axios.defaults.headers.get['Pragma'] = 'no-cache'
+axios.defaults.headers.get['Cache-Control'] = 'no-cache, no-store'
