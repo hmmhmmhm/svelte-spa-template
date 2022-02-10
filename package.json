@@ -25,7 +25,7 @@
     "folder-logger": "^1.0.7",
     "moment": "^2.25.3",
     "nested-static": "^1.1.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-svelte": "^4.0.6",
     "postcss": "^7.0.29",
