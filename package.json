@@ -33,7 +33,7 @@
     "public-ip": "^4.0.1",
     "regenerator-runtime": "^0.13.5",
     "svelma": "^0.3.2",
-    "svelte": "^3.22.2",
+    "svelte": "^3.49.0",
     "svelte-css-in-js": "^1.0.3",
     "svelte-notifications": "^0.9.9",
     "svelte-preprocess": "^3.7.4",
